@@ -1,93 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" class="no-js">
 <head>
-	<title>Latihan Membuat Form</title>
-</head>
-<body>
- 
-<!--Membuat Form-->
-<h1>Formulir Mahasiswa</h1>	
-<form>
-	<table>
-		<tr>
-			<td>Nama</td>
-			<td>:</td>
-			<td><input type="text" name="nama" placeholder="Nama"></td>
-		</tr>
-		<tr>
-			<td>NPM</td>
-			<td>:</td>
-			<td><input type="text" name="npm" placeholder="NPM"></td>
-		</tr>
-		<tr>
-			<td>Kelas</td>
-			<td>:</td>
-			<td><input type="text" name="kelas" placeholder="Kelas"></td>
-		</tr>
-		<tr>
-			<td>Jenis Kelamin</td>
-			<td>:</td>
-			<td>
-			<input type="radio" name="j_kel" value="Male">Male
-			<input type="radio" name="j_kel" value="Female">Female
-			</td>
-		</tr>
-		<tr>
-			<td>Tanggal Lahir</td>
-			<td>:</td>
-			<td>
-				<input type="date" name="tgl_lahir">
-			</td>
-		</tr>
-		<tr>
-		<tr>
-			<td>Alamat</td>
-			<td>:</td>
-			<td>
-				<textarea name="alamat" placeholder="Alamat"></textarea>
-			</td>
-		</tr>
-		<tr>
-			<td>Hobi</td>
-			<td>:</td>
-			<td>
-				<input type="checkbox" name="hobi" value="Main Game">Main Game
-				<input type="checkbox" name="hobi" value="Belajar">Belajar
-				<input type="checkbox" name="hobi" value="Menonton Film">Menonton Film
-			</td>
-		</tr>
-			<td>Jurusan</td>
-			<td>:</td>
-			<td>
-				<select name="jurusan">
-					<option>--Pilih--
-					<option>Sistem Informasi
-					<option>Teknik Informatika
-					<option>Teknik Inustri
-					<option>Psikologi
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td>Fakultas</td>
-			<td>:</td>
-			<td>
-				<select name="fakultas">
-					<option>--Pilih--
-					<option>Teknologi Industri
-					<option>Ilmu Komputer
-					<option>Psikologi
-					<option>Ekonomi
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<input type="submit" value="Submit">
-				<input type="reset" value="Reset">
-			</td>
-		</tr>
-	</table>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>My Website &#8211; Built with SitePad</title>
+<link rel="alternate" type="application/rss+xml" title="My Website &raquo; Feed" href="feed.html" />
+<link rel="alternate" type="application/rss+xml" title="My Website &raquo; Comments Feed" href="comments/feed/" />
+<link rel='stylesheet' id='this-style-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sitemush-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='css/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sitemush-style-css'  href='css/style.css' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='sitemush-ie-css'  href='css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='sitemush-ie8-css'  href='css/ie8.css' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='sitemush-ie7-css'  href='css/ie7.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mpce-venobox-css-css'  href='css/venobox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mpce-insites-css-css'  href='css/cookieconsent.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mpce-theme-css'  href='css/theme.css' type='text/css' media='all' />
+<style id='mpce-theme-inline-css' type='text/css'>
+.sm-row-fixed-width{max-width:1170px;}
+</style>
+<link rel='stylesheet' id='mpce-bootstrap-grid-css'  href='css/bootstrap-grid.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mpce-font-awesome-css'  href='css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://code.jquery.com/jquery-1.11.1.js?ver=4.4.8'></script>
+<script type='text/javascript' src='js/header.js'></script>
+<script type='text/javascript' src='js/isotope.js'></script>
+<script type='text/javascript' src='js/imagesloaded.min.js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='js/html5.js'></script>
+<![endif]-->
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/venobox.min.js'></script>
+<script type='text/javascript' src='js/cookieconsent.min.js'></script>
+<link rel='https://api.w.org/' href='szp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="site-inc/wlwmanifest.xml" /> 
+<meta name="generator" content="SitePad" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="home page page-id-6 page-template-default">
+<div id="page" class="site container-fluid">
+	<div class="site-inner">
+			
+		
+		<header id="masthead" class="site-header" role="banner"><div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right header">
+<div class="sm-span4 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-szp_site_title smue-ce-child-detector site_title"><div class="site-title-container"  ><a href="index.html" >My Website</a></div></div>
+</div>
+<div class="sm-span8 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-szp_primary_nav smue-ce-child-detector floatright"><i class="fa fa-bars responsive_bar" id="menu-toggle" aria-expanded="false"> </i>  <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-navigation social-navigation">Menu</button>
+	<div id="site-header-menu" class="site-header-menu">
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu"><div class="menu-header-menu-container"><ul id="menu-header-menu" class="primary-menu"><li id="menu-item-10" class="home menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-10" style="  " ><a href="index.html" style="  " >Home</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11" style="  " ><a href="blog.html" style="  " >Blog</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12" style="  " ><a href="contact.html" style="  " >Contact</a></li>
+</ul></div></nav><!-- .main-navigation -->
+	</div><!-- .site-header-menu --></div><style>@media screen and (min-width:768px) { .site-header-menu .main-navigation .primary-menu > li {} .site-header-menu .main-navigation a{} .site-header-menu .main-navigation .sub-menu a {} .site-header-menu .main-navigation .current-menu-item > a {} .site-header-menu .main-navigation li:hover > a {} .site-header-menu .main-navigation .primary-menu > .menu-item-has-children > a::after {} .site-header-menu .main-navigation ul ul .menu-item-has-children > a::after {} } @media screen and (max-width:767px) { .site-header-menu .main-navigation a, .site-header-menu .main-navigation .sub-menu a {} i.responsive_bar{} .site-header-menu .main-navigation li.current-menu-item > a {} .site-header-menu .main-navigation a:hover, .site-header-menu .main-navigation .primary-menu li a:hover {} .site-header-menu {} .dropdown-toggle:after {} }</style><script type="text/javascript">
+		
+		jQuery(document).ready(function(){
+			
+			var maxwidth = 0;
+			var menu_len = jQuery("div.smue-szp_primary_nav").length; // number of menus added
+			
+			jQuery( "ul.primary-menu > li" ).each(function() {
+				maxwidth += jQuery(this).width(); // Find total width
+			});
+			
+			if(menu_len){
+				maxwidth /= menu_len; // Divide the total width with number of menus
+			}
+			
+			jQuery( ".smue-szp_primary_nav" ).css( "maxWidth", maxwidth + "px" ); // Assign the maxWidth
+		});		
+		</script>
+</div>
+</div>
+
+		</header><!-- .site-header -->
+		<script language="javascript" type="text/javascript">
+			var cur_page_data = {pageid:"6", pagename:"home"};
+			var cur_themes_url = "http://xuzut.us/site-data/themes";
+		</script>
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		
+<article id="post-6" class="post-6 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<div data-stellar-background-ratio="0.5" class="sm-row-fluid smue-row smue-row-parallax sme-dsbl-margin-left sme-dsbl-margin-right banner" style="background-image:url(&quot;images/banner.jpg&quot;);">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-service-box-obj smue-service-box-centered smue-service-box-basic banner_content">
+<div class="smue-service-box-icon-section smue-service-box-small-icon"  style=" padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;"></div>
+<div class="smue-service-box-heading-section">
+<h1 style=" color: ;">John White</h1>
+</div>
+<div class="smue-service-box-content-section">
+<h2 class="tm-home-subtitle">Creative Director</h2>
+<p>I am a professional <strong>UX Designer</strong> and <strong>Front-End Developer</strong> creating modern and responsive designs for <strong>Web</strong> and <strong>Mobile</strong>. Let us work together. Thank you.</p>
+</div>
+<div class="smue-service-box-button-section smue-text-align-center"><a href="#" class="smue-btn smue-btn-size-middle smue-btn-rounded" rel="" >Let&#8217;s Begin</a></div>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right services_row">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj services_heading">
+<h1 style="text-align: center;">My <strong>Work</strong></h1>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span4 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-service-box-obj smue-service-box-centered smue-service-box-basic services">
+<div class="smue-service-box-icon-section smue-service-box-small-icon"  style=" padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;">
+<div class="smue-service-box-icon-holder smue-service-box-icon-holder-rounded"  style=" font-size: 60px; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;"><i class="fa fa-link"  style=" color: rgb(136, 136, 136);"></i></div>
+</div>
+<div class="smue-service-box-heading-section">
+<h3 style=" color: ;">Mobile UX</h3>
+</div>
+<div class="smue-service-box-content-section">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+</div>
+</div>
+</div>
+<div class="sm-span4 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-service-box-obj smue-service-box-centered smue-service-box-basic services">
+<div class="smue-service-box-icon-section smue-service-box-small-icon"  style=" padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;">
+<div class="smue-service-box-icon-holder smue-service-box-icon-holder-rounded"  style=" font-size: 60px; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;"><i class="fa fa-flash"  style=" color: rgb(136, 136, 136);"></i></div>
+</div>
+<div class="smue-service-box-heading-section">
+<h3 style=" color: ;">Web Design</h3>
+</div>
+<div class="smue-service-box-content-section">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+</div>
+</div>
+</div>
+<div class="sm-span4 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-service-box-obj smue-service-box-centered smue-service-box-basic services">
+<div class="smue-service-box-icon-section smue-service-box-small-icon"  style=" padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;">
+<div class="smue-service-box-icon-holder smue-service-box-icon-holder-rounded"  style=" font-size: 60px; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;"><i class="fa fa-dashboard"  style=" color: rgb(136, 136, 136);"></i></div>
+</div>
+<div class="smue-service-box-heading-section">
+<h3 style=" color: ;">HTML Templates</h3>
+</div>
+<div class="smue-service-box-content-section">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right portfolio_row">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj project_heading">
+<h1 style="text-align: center;">My <strong>Portfolio</strong></h1>
+</div>
+</div>
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right buttons_col filter-wrapper">
+<div class="sm-span3 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right  smue-empty sm-hidden-phone">
+</div>
+<div class="sm-span1 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-button-obj smue-text-align-center"><a href="#" target="_self" class="smue-btn smue-btn-size-middle all"  >All</a></div>
+</div>
+<div class="sm-span1 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-button-obj smue-text-align-center"><a href="#" target="_self" class="smue-btn smue-btn-size-middle html"  >HTML</a></div>
+</div>
+<div class="sm-span1 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-button-obj smue-text-align-center"><a href="#" target="_self" class="smue-btn smue-btn-size-middle photoshop"  >Photoshop</a></div>
+</div>
+<div class="sm-span1 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-button-obj smue-text-align-center"><a href="#" target="_self" class="smue-btn smue-btn-size-middle wordpress"  >WordPress</a></div>
+</div>
+<div class="sm-span1 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-button-obj smue-text-align-center"><a href="#" target="_self" class="smue-btn smue-btn-size-middle mobile"  >Mobile</a></div>
+</div>
+<div class="sm-span3 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right  smue-empty sm-hidden-phone">
+</div>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box html photoshop wordpress mobile">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio1.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio1.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box html wordpress mobile">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio2.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio2.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box wordpress">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio3.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio3.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box html mobile">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio4.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio4.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box wordpress">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio5.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio5.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box html photoshop">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio6.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio6.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box photoshop">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio7.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio7.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span3 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right portfolio_img iso-box-wrapper">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right iso-box wordpress">
+<div class="smue-image-obj smue-text-align-left"><a href="images/portfolio8.jpg" data-action="smueLightbox"false target="_self" ><img src="images/portfolio8.jpg" class="smue-image-obj-basic sme-dsbl-margin-left sme-dsbl-margin-right sme-dsbl-margin-top sme-dsbl-margin-bottom" /></a></div>
+</div>
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right img_content">
+<div class="smue-text-obj">
+<h3 style="text-align: center;"><strong>UX Design</strong></h3>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right resume_row">
+<div class="sm-span6 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj team_heading">
+<h1>My <strong>Profile</strong></h1>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj">
+<p><strong>Name </strong> John White</p>
+<p><strong>Birthday </strong> December 24, 1996</p>
+<p><strong>Address </strong> Melbourne Victoria 3000 Australia</p>
+<p><strong>Phone </strong> +001 020 0340 | 009 080 0760</p>
+<p><strong>Email </strong> hello@company.com</p>
+<p><strong>Website </strong> <a class="tm-red-text" href="#">www.company.com</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span6 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj team_heading">
+<h1><strong>Some</strong> Skills</h1>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span12 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div id="smue-google-chart-60c7117a93b06" class="smue-google-chart" data-chart="{&quot;ID&quot;:&quot;smue-google-chart-60c7117a93b06&quot;,&quot;type&quot;:&quot;BarChart&quot;,&quot;title&quot;:&quot;&quot;,&quot;donut&quot;:&quot;&quot;,&quot;table&quot;:[[&quot;Skills&quot;,&quot;Percentage&quot;],[&quot;BOOTSTRAP&quot;,100],[&quot;HTML&quot;,90],[&quot;SEO&quot;,60]],&quot;height&quot;:null,&quot;colors&quot;:[&quot;#EB5424&quot;],&quot;backgroundColor&quot;:null}"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-stellar-background-ratio="0.5" class="sm-row-fluid smue-row smue-row-parallax sme-dsbl-margin-left sme-dsbl-margin-right about_row" style="background-image:url(&quot;images/about-bg.jpg&quot;);">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj about_content">
+<h2>This is <strong>me</strong></h2>
+<h1>Creative <strong>Director</strong></h1>
+<p>This is free Bootstrap mobile friendly layout from <a href="https://sitepad.com">SitePad</a>. Feel free to use it for your website. Go to SitePad Editor to add your own text and edit me. Go to SitePad Editor to add your own text and edit me. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span4 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right facebook social">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span2 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-ce-icon-obj smue-ce-icon-shape-rounded  smue-ce-icon-size-custom  smue-ce-icon-align-center  sme-dsbl-padding-left sme-dsbl-padding-right sme-dsbl-margin-top sme-dsbl-margin-bottom" style=" min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em; font-size: 30.000000px;">
+<div style="background-color:rgb(255, 255, 255); border-color: transparent; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;" class="smue-ce-icon-bg"><span class="fa fa-facebook smue-ce-icon-preview" style="color:rgb(112, 112, 112)"></span></div>
+</div>
+</div>
+<div class="sm-span10 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj social_content">
+<h4>Follow me on</h4>
+<h3>Social Facebook</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span4 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right twitter social">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span2 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-ce-icon-obj smue-ce-icon-shape-rounded  smue-ce-icon-size-custom  smue-ce-icon-align-center  sme-dsbl-padding-left sme-dsbl-padding-right sme-dsbl-margin-top sme-dsbl-margin-bottom" style=" min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em; font-size: 30.000000px;">
+<div style="background-color:rgb(255, 255, 255); border-color: transparent; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;" class="smue-ce-icon-bg"><span class="fa fa-twitter smue-ce-icon-preview" style="color:rgb(112, 112, 112)"></span></div>
+</div>
+</div>
+<div class="sm-span10 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj social_content">
+<h4>Tweet me on</h4>
+<h3>Social Twitter</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-span4 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right pinterest social">
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="sm-span2 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-ce-icon-obj smue-ce-icon-shape-rounded  smue-ce-icon-size-custom  smue-ce-icon-align-center  sme-dsbl-padding-left sme-dsbl-padding-right sme-dsbl-margin-top sme-dsbl-margin-bottom" style=" min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em; font-size: 30.000000px;">
+<div style="background-color:rgb(255, 255, 255); border-color: transparent; min-height: 2.000000em; height: 2.000000em; min-width: 2.000000em; width: 2.000000em;" class="smue-ce-icon-bg"><span class="fa fa-pinterest smue-ce-icon-preview" style="color:rgb(112, 112, 112)"></span></div>
+</div>
+</div>
+<div class="sm-span10 smue-clmn sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj social_content">
+<h4>Pin me on</h4>
+<h3>Social Pinterest</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right contact_row">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj">
+<h1 style="text-align: center;">Drop <strong>me a line</strong></h1>
+</div>
+</div>
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<form role="form"  class="mpce-cfa-form  register_form smue-form-84"  method="post" enctype="multipart/form-data">
+<p class="mpce-cfa-form-group mpce-cfa-form-text"><input type="text" name="YourName" id="YourName" class="cfa-input" placeholder="Your Name" /></p>
+<p class="mpce-cfa-form-group mpce-cfa-form-text"><input type="text" name="YourSubject" id="YourSubject" class="cfa-input" placeholder="Your Subject" /></p>
+<p class="mpce-cfa-form-group mpce-cfa-form-email"><input type="email" name="YourEmail" id="YourEmail" class="cfa-mail" placeholder="Your Email" /></p>
+<p class="mpce-cfa-form-group mpce-cfa-form-textarea"><textarea name="YourMessage" id="YourMessage" class="cfa-textarea" placeholder="Your Message"  rows="6" ></textarea></p>
+<div class="mpce-cfa-message"></div>
+<p><input type="hidden" name="cfa_name" value="Contact Form"><input type="hidden" name="cfa_id" value="">
+<p class="smue-button-obj mpce-cfa-form-group mpce-cfa-form-submit"><input type="submit" name="cfa-submit" class="cfa-submit  smue-btn-size- form-submit" value="Shoot Message" /><img src="images/loader.gif"  class="mpce-cfa-loader"></p>
 </form>
-</body>
+</div>
+</div>
+	</div><!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+	</main><!-- .site-main -->
+</div><!-- .content-area -->
+
+
+		</div><!-- .site-content -->
+		
+		
+		<footer id="colophon" class="site-footer" role="contentinfo"><div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right copyright">
+<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+<div class="smue-text-obj">
+<p>Theme by <a href="https://sitepad.com">SitePad</a></p>
+</div>
+</div>
+</div>
+
+		</footer><!-- .site-footer -->	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<link rel='stylesheet' id='mpce-cfa-style-css'  href='css/cfa.style.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='js/skip-link-focus-fix.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/functions.js'></script>
+<script type='text/javascript' src='js/szp-embed.min.js'></script>
+<script type='text/javascript' src='js/jquery.stellar.min.js'></script>
+<script type='text/javascript' src='js/mp-row-parallax.js'></script>
+<script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='js/mp-lightbox.js'></script>
+<script type='text/javascript' src='https://www.google.com/jsapi?ver=4.4.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var smueGoogleChartsPHPData = {"smueCE":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/mp-google-charts.js'></script>
+<script type='text/javascript' src='js/jquery.waypoints.min.js'></script>
+<script type='text/javascript' src='js/mp-waypoint-animations.js'></script>
+<script type='text/javascript' src='js/cfa.modernizr.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MPCE_CFA_Ajax = {"ajaxurl":"contact.php","security":"ce77725cdf","sitekey":"","success":"","fail":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/cfa.engine.min.js'></script>
+<style id="smue-ce-private-styles" data-posts="" type="text/css"></style></body>
 </html>
